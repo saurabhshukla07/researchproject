@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+.typo{
+  color: #4A4A68;
+  padding: 2vw;
+font-family: Work Sans;
+font-weight: bold;
+size: 64px;
+letter-spacing: -2%;
+
+}
+.align{
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  width: 15vw;
+  margin-left: 41rem;
+  gap: 0.5vw;
+}
+.roundness{
+  box-sizing: border-box;
+  border-radius: 1vh;
+}
