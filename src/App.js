@@ -9,10 +9,10 @@ import SwitchButton from './SwitchButton';
 function App() {
   return (
     <div className="App">
+      
       <NavbarResearchProject></NavbarResearchProject>
      <ResearchTab></ResearchTab>
-     
-     <CitationPopup></CitationPopup>
+  <CitationPopup></CitationPopup>
     </div>
   );
 }

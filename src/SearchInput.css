@@ -1,0 +1,36 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #8c8ca1;
+    border-radius: 4px;
+  padding: 8px;
+  margin-left: 28vw;
+    width: 300px; /* Adjust width as needed */
+    box-sizing: border-box;
+    border-radius: 100vh;
+  width: 30vw;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 8px;
+  }
+  
+  .search-button img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+  /* Optional: Styling for search animation/bar */
+  

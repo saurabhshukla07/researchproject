@@ -36,9 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.bg-body-tertiary {
+  border-bottom: 2px solid #ECF1F4;
+
+
+}
+.logo{
+  border-inline: 2px solid #ECF1F4;
+  display: flex;
+  gap: 20px;
+}
 .typo{
   color: #4A4A68;
-  padding: 2vw;
+  padding: 8vw;
 font-family: Work Sans;
 font-weight: bold;
 size: 64px;
@@ -56,5 +66,14 @@ letter-spacing: -2%;
 }
 .roundness{
   box-sizing: border-box;
-  border-radius: 1vh;
+  border-radius: 100vh;
+width: 30vw;
+
+}
+.searchwala{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: green;
+  gap: 0.5vw;
 }

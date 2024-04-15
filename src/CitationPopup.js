@@ -1,40 +1,27 @@
-import React, { useState } from "react";
+import Button from 'react-bootstrap/Button';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
-const CitationPopup = () => {
-  const [inputInfo, setInputInfo] = useState("");
-  const [citations, setCitations] = useState([]);
-
-  const generateCitations = () => {
-    try {
-      // Process inputInfo to generate citations in various styles
-      // This is a simplified example; actual implementation requires citation library
-      // Assume inputInfo format and citation styles handling
-      const formattedCitations = []; // Array of formatted citations
-
-      setCitations(formattedCitations);
-    } catch (error) {
-      console.error("Error generating citations:", error);
-    }
-  };
-
+function CitationPopup() {
   return (
-    <div>
-      <h2 className="typo">Citation Popup</h2>
-      <div className="align">
-        <textarea className="roundness"
-          value={inputInfo}
-          onChange={(e) => setInputInfo(e.target.value)}
-          placeholder="Enter information..."
-        />
-        <button onClick={generateCitations}>Generate Citations</button>
-        <div>
-          {citations.map((citation, index) => (
-            <p key={index}>{citation}</p>
-          ))}
-        </div>
-      </div>
-    </div>
+    <>
+      {['top', 'right', 'bottom', 'left'].map((placement) => (
+        <OverlayTrigger
+          key={placement}
+          placement={placement}
+          overlay={
+            <Tooltip id={`tooltip-${placement}`}>
+              Add a citation @
+            </Tooltip>
+          }
+        >
+          <Button variant="white" style={{border:'2px solid #8c8ca1'}}>Citrate Here {placement}</Button>
+        
+        </OverlayTrigger>
+      ))}
+      
+    </>
   );
-};
+}
 
 export default CitationPopup;
